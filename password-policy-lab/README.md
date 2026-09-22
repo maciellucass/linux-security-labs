@@ -23,15 +23,12 @@ By default, the system allows passwords to never expire, which represents a secu
 The `chage` command was used to apply password policies to a user:
 
 - Set password expiration to 30 days:
-  ```bash
-  sudo chage -M 30 lucas
+ sudo chage -M 30 lucas
   
 - Set minimum days between password changes to 5:
-  ```bash
 sudo chage -m 5 lucas
 
 - Set warning period to 7 days before expiration:
-  ```bash
 sudo chage -W 7 lucas
 
 #### After Configuration
