@@ -25,3 +25,16 @@ The `chage` command was used to apply password policies to a user:
 - Set password expiration to 30 days:
   ```bash
   sudo chage -M 30 lucas
+  
+- Set minimum days between password changes to 5:
+sudo chage -m 5 lucas
+
+- Set warning period to 7 days before expiration:
+sudo chage -W 7 lucas
+
+#### After Configuration
+
+![After](./password-policy-after.png)
+
+### Result
+After applying the configuration, the user is required to update the password periodically, improving overall system security.
