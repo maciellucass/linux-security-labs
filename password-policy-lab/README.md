@@ -2,7 +2,7 @@
 
 This lab demonstrates how to implement basic password security policies in a Linux environment, focusing on expiration control and credential management.
 
-### Objective
+#### Objective
 
 Apply essential password security configurations, including:
 
@@ -10,15 +10,15 @@ Apply essential password security configurations, including:
 - Minimum time between password changes
 - Warning period before expiration
 
-### Initial Scenario
+#### Initial Scenario
 
 By default, the system allows passwords to never expire, which represents a security risk.
 
-#### Before Configuration
+##### Before Configuration
 
 ![Before](./password-policy-before.png)
 
-### Implementation
+#### Implementation
 
 The `chage` command was used to apply password policies to a user:
 
@@ -27,9 +27,11 @@ The `chage` command was used to apply password policies to a user:
   sudo chage -M 30 lucas
   
 - Set minimum days between password changes to 5:
+  ```bash
 sudo chage -m 5 lucas
 
 - Set warning period to 7 days before expiration:
+  ```bash
 sudo chage -W 7 lucas
 
 #### After Configuration
